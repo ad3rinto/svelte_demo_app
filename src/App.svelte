@@ -2,10 +2,11 @@
 	// import svelteLogo from './assets/svelte.svg'
 	// import Counter from './lib/Counter.svelte'
 	const name = "Adeniyi";
+	const action = "<em>Check it out<em/>";
 </script>
 
 <main>
-	<h1>Hello {name}</h1>
+	<h1>Hello {name} {@html action}</h1>
 </main>
 
 <style>
