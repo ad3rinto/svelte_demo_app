@@ -3,10 +3,17 @@
 	// import Counter from './lib/Counter.svelte'
 	const name = "Adeniyi";
 	const action = "<em>Check it out<em/>";
+	const age = 49
 </script>
 
 <main>
 	<h1>Hello {name} {@html action}</h1>
+	{#if age > 50}
+	<h3>You are a middle aged man</h3>
+	{:else if age < 50}
+	<h3>You ng nigga</h3>
+	{/if}
+
 </main>
 
 <style>
