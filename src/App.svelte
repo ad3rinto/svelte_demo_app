@@ -5,6 +5,7 @@
 	const lastName = "Aderinto";
 	const statement = "<em>EsQ<em/>";
 	const age = 49;
+	const names = ["Bruce", "akin", "diana"];
 </script>
 
 <main>
@@ -15,6 +16,9 @@
 		<h3>Young Omo professor agba</h3>
 	{/if}
 </main>
+{#each names as item}
+	<h2>{item}</h2>
+{/each}
 
 <style>
 	.logo {
